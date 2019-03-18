@@ -1,7 +1,7 @@
 # Parallels-Desktop-Ansible-Inventory-Script
 If you for some reason running Ansible Tower in a Parallels Desktop vm and wants a custom inventory script for Parallels Desktop, this is the place for you!
 
-Since Parallels Desktop not has an API you can query from a remote node, I'm using the Ansible python API in the inventory script to execute parallels cli commands on the virtualization host(my Mac).
+Since Parallels Desktop not has an API that you can query from a remote node, I'm using the Ansible python API in the inventory script to execute parallels cli commands on the virtualization host(my Mac).
 ## Installation
 You must:
 1. Add parallels_desktop_inventory.py as a custom inventory script in Tower
@@ -17,7 +17,7 @@ You must:
 ![Alt text](images/add_script.png?raw=true "add script")
 ### To create a custom credential in Ansible Tower
 1.  click the **Credential Types** ![Alt text](images/credential-types-icon.png?raw=true "Credential Types") icon from the left navigation bar.
-2.Click the ![Add](images/add-button.png?raw=true "settings") button located in the upper right corner of the Credential Types screen.
+2. Click the ![Add](images/add-button.png?raw=true "settings") button located in the upper right corner of the Credential Types screen.    
 3. Enter the name for the credential, plus an optional description.
 ![Alt text](images/credential.png?raw=true "Credential Types")
 Input Configuration:
@@ -45,3 +45,12 @@ env:
   PARALLELS_PASSWORD: '{{password}}'
   PARALLELS_USERNAME: '{{username}}'
 ```
+### Add a Credential for the Parallels Inventory
+1. click the **Credentials** icon from the left navigation bar.   
+2. click the ![Add](images/add-button.png?raw=true "settings") button located in the upper right corner of the Credentials screen.
+3. Enter required information
+![Add](images/credentials.png?raw=true "settings")
+### Add inventory source for your inventory
+![Add](images/inventory-source.png?raw=true "settings")
+
+Happy Inventory / Peter
