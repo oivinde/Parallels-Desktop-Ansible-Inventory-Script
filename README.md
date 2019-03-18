@@ -9,4 +9,4 @@ You must:
 3.) Add authentication information to the custom credential
 4.) Add an inventory and set the custom inventory script as a source
 ### To add a new custom inventory script in Ansible Tower
-1.) choose Inventory Scripts from the Setup (![Alt text](images/wheel.png?raw=true "settings")) menu.
+1.) choose **Inventory Scripts** from the Setup ![Alt text](images/wheel.png?raw=true "settings") menu.
